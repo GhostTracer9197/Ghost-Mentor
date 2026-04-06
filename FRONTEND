@@ -1,0 +1,11 @@
+export default function Home() {
+  return (
+    <div className="landing">
+      <h1>Ghost Mentor</h1>
+      <p>Build wealth through systems, automation, and strategy.</p>
+      <button onClick={() => window.location.href="/dashboard"}>
+        Begin Wealth Scan
+      </button>
+    </div>
+  );
+}
