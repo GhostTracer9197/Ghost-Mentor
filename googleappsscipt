@@ -1,0 +1,16 @@
+function autoOrganize() {
+  var folder = DriveApp.getFolderById("FOLDER_ID");
+  var files = folder.getFiles();
+
+  while (files.hasNext()) {
+    var file = files.next();
+    var name = file.getName();
+
+    if (name.includes("invoice")) {
+      file.moveTo(DriveApp.getFolderById("INVOICES_FOLDER"));
+    }
+    if (name.includes("content")) {
+      file.moveTo(DriveApp.getFolderById("CONTENT_FOLDER"));
+    }
+  }
+}
