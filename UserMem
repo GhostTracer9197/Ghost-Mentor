@@ -1,0 +1,10 @@
+import db from "../../database/db.js";
+
+export async function getUserMemory(userId) {
+    const profile = await db.user_profile.findOne({ where: { user_id: userId }});
+    return profile;
+}
+
+export async function updateUserMemory(userId, updates) {
+    await db.user_profile.update(updates, { where: { user_id: userId }});
+}
