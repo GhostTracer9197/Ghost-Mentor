@@ -1,0 +1,35 @@
+/ghost-mentor
+│
+├── /frontend
+│   ├── /components
+│   ├── /pages
+│   ├── /styles
+│   ├── /hooks
+│   └── /utils
+│
+├── /backend
+│   ├── /routes
+│   ├── /controllers
+│   ├── /services
+│   ├── /middleware
+│   └── /models
+│
+├── /ai
+│   ├── system_prompt.md
+│   ├── modules/
+│   │   ├── education_engine.md
+│   │   ├── passive_income_engine.md
+│   │   ├── automation_engine.md
+│   │   └── strategy_engine.md
+│   ├── memory/
+│   └── reasoning/
+│
+├── /database
+│   ├── schema.sql
+│   ├── migrations/
+│   └── seed/
+│
+└── /automation
+    ├── workflows/
+    ├── templates/
+    └── scripts/
