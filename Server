@@ -1,0 +1,19 @@
+import express from "express";
+import cors from "cors";
+import authRoutes from "./routes/auth.js";
+import aiRoutes from "./routes/ai.js";
+import userRoutes from "./routes/user.js";
+import systemsRoutes from "./routes/systems.js";
+import automationRoutes from "./routes/automation.js";
+
+const app = express();
+app.use(cors());
+app.use(express.json());
+
+app.use("/auth", authRoutes);
+app.use("/ai", aiRoutes);
+app.use("/user", userRoutes);
+app.use("/systems", systemsRoutes);
+app.use("/automation", automationRoutes);
+
+app.listen(4000, () => console.log("Ghost Mentor backend running on port 4000"));
