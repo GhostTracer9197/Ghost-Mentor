@@ -1,0 +1,17 @@
+export default function educationEngine(message, memory) {
+    return {
+        mode: "Learn",
+        response: `
+Here is a simplified breakdown of the concept you asked about:
+
+1. Core Idea
+2. Why It Matters
+3. How It Works
+4. Real-World Example
+5. How to Apply It
+6. Next Steps
+
+This explanation is adapted to your profile: ${memory.learning_style}.
+        `
+    };
+}
