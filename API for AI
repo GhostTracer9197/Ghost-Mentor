@@ -1,0 +1,16 @@
+import express from "express";
+import routeAI from "../ai/reasoning/router.js";
+import { getUserMemory } from "../ai/memory/userMemory.js";
+
+const router = express.Router();
+
+router.post("/chat", async (req, res) => {
+    const { userId, message } = req.body;
+
+    const memory = await getUserMemory(userId);
+    const response = await routeAI(message, memory);
+
+    res.json(response);
+});
+
+export default router;
