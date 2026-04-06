@@ -1,0 +1,22 @@
+import educationEngine from "../engines/education.js";
+import passiveIncomeEngine from "../engines/passiveIncome.js";
+import automationEngine from "../engines/automation.js";
+import strategyEngine from "../engines/strategy.js";
+
+export default async function routeAI(userMessage, userMemory) {
+    const msg = userMessage.toLowerCase();
+
+    if (msg.includes("learn") || msg.includes("explain") || msg.includes("teach")) {
+        return educationEngine(userMessage, userMemory);
+    }
+
+    if (msg.includes("build") || msg.includes("income") || msg.includes("business")) {
+        return passiveIncomeEngine(userMessage, userMemory);
+    }
+
+    if (msg.includes("automate") || msg.includes("workflow") || msg.includes("system")) {
+        return automationEngine(userMessage, userMemory);
+    }
+
+    return strategyEngine(userMessage, userMemory);
+}
