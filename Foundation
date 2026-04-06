@@ -1,0 +1,50 @@
+ghost-mentor/
+│
+├── frontend/
+│   ├── pages/
+│   │   ├── index.jsx
+│   │   ├── dashboard.jsx
+│   │   ├── learn.jsx
+│   │   ├── build.jsx
+│   │   ├── automate.jsx
+│   │   └── coach.jsx
+│   ├── components/
+│   ├── hooks/
+│   ├── styles/
+│   └── utils/
+│
+├── backend/
+│   ├── server.js
+│   ├── routes/
+│   │   ├── auth.js
+│   │   ├── ai.js
+│   │   ├── user.js
+│   │   ├── systems.js
+│   │   └── automation.js
+│   ├── controllers/
+│   ├── services/
+│   ├── middleware/
+│   └── models/
+│
+├── ai/
+│   ├── systemPrompt.js
+│   ├── engines/
+│   │   ├── education.js
+│   │   ├── passiveIncome.js
+│   │   ├── automation.js
+│   │   └── strategy.js
+│   ├── memory/
+│   │   ├── vectorStore.js
+│   │   └── userMemory.js
+│   └── reasoning/
+│       └── router.js
+│
+├── database/
+│   ├── schema.sql
+│   ├── migrations/
+│   └── seed/
+│
+└── automation/
+    ├── workflows/
+    ├── templates/
+    └── scripts/
