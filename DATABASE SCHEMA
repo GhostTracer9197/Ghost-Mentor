@@ -1,0 +1,52 @@
+USERS TABLE
+id (PK)
+email
+password_hash
+created_at
+
+User_Profile Table
+user_id (FK)
+income_range
+skills
+time_availability
+interests
+risk_tolerance
+goals
+learning_style
+wealth_archetype
+strengths
+weaknesses
+leverage_points
+
+
+Progress Table
+user_id (FK)
+week_number
+tasks_completed
+systems_built
+income_streams
+notes
+
+Systems Table
+Code
+system_id (PK)
+user_id (FK)
+system_name
+system_type
+created_at
+status
+Automation Table
+Code
+automation_id (PK)
+user_id (FK)
+workflow_name
+workflow_steps
+tools_required
+status
+Knowledge Base Table
+Code
+id (PK)
+category
+title
+content
+tags
