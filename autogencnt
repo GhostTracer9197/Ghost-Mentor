@@ -1,0 +1,12 @@
+function weeklyReport() {
+  var sheet = SpreadsheetApp.getActiveSheet();
+  var data = sheet.getRange("A2:D").getValues();
+
+  var summary = "Weekly Summary:\n";
+
+  data.forEach(row => {
+    summary += `${row[0]}: ${row[1]} sales, ${row[2]} views\n`;
+  });
+
+  MailApp.sendEmail("you@example.com", "Weekly Report", summary);
+}
